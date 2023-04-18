@@ -3,6 +3,7 @@ import aboutpic from "../assets/IMG_20230122_134051-removebg-preview1.png";
 import { AiFillPhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const About = () => {
     return (
@@ -49,7 +50,11 @@ const About = () => {
                 </div>
             </div>
             <div className="lg:w-[50%] lg:flex lg:justify-end">
-                <img src={aboutpic} alt="profile" className="w-[70%]" />
+                <motion.img src={aboutpic} alt="profile" className="w-[70%]" 
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1}}
+                    transition={{ type: 'tween', duration: 1, delay: .3 }}
+                />
             </div>
         </div>
     );

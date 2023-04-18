@@ -18,6 +18,7 @@ import framer from "../assets/framer.png";
 import vscode from "../assets/vscode.png";
 import vite from "../assets/vite.svg";
 import nextjs from "../assets/nextjs.svg";
+import { motion } from "framer-motion"
 
 const Skills = () => {
   return (
@@ -26,7 +27,11 @@ const Skills = () => {
         Skills
       </h1>
       <div className="mt-16 lg:mt-12 lg:flex lg:justify-between lg:gap-8 lg:flex-wrap">
-        <div className="bg-white border-4 shadow-lg border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]">
+        <motion.div className="bg-white border-4 shadow-lg border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1}}
+          transition={{ type: 'tween', duration: 1, delay: .3 }}
+        >
           <div className="flex pt-4 md:pt-8 -m-4 gap-4 items-center">
             <img
               src={html}
@@ -40,9 +45,13 @@ const Skills = () => {
           <p className="px-6 pt-8">
             I've been using HTML since the day when I started coding back in 2018 when I was in Senior High School.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="bg-white border-4 shadow-lg mt-8 lg:mt-0 border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]">
+        <motion.div className="bg-white border-4 shadow-lg mt-8 lg:mt-0 border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1}}
+          transition={{ type: 'tween', duration: 1, delay: .3 }}
+        >
           <div className="flex pt-4 md:pt-8 -m-4 gap-4 items-center">
             <img
               src={css}
@@ -56,9 +65,13 @@ const Skills = () => {
           <p className="px-6 pt-8">
             I've been using CSS for styling alongside with HTML since the day when I started coding back in 2018 when I was in Senior High School.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="bg-white border-4 shadow-lg mt-8 lg:mt-0 border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]">
+        <motion.div className="bg-white border-4 shadow-lg mt-8 lg:mt-0 border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1}}
+          transition={{ type: 'tween', duration: 1, delay: .3 }}
+        >
           <div className="flex pt-4 md:pt-8 -m-4 gap-4 items-center">
             <img
               src={javascript}
@@ -72,9 +85,13 @@ const Skills = () => {
           <p className="px-6 pt-8">
             I have a bsaic understanding and knowledge about Javascript as well as ES6+ and Javascript OOP.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="bg-white border-4 shadow-lg mt-8 lg:mt-0 border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]">
+        <motion.div className="bg-white border-4 shadow-lg mt-8 lg:mt-0 border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1}}
+          transition={{ type: 'tween', duration: 1, delay: .3 }}
+        >
           <div className="flex pt-4 md:pt-8 -m-4 gap-4 items-center">
             <img
               src={react}
@@ -88,9 +105,13 @@ const Skills = () => {
           <p className="px-6 pt-8">
             I have built projects using React alongside with different tech stack and libraries, so I can say that I have enough knowledge using React framework.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="bg-white border-4 shadow-lg mt-8 lg:mt-0 border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]">
+        <motion.div className="bg-white border-4 shadow-lg mt-8 lg:mt-0 border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1}}
+          transition={{ type: 'tween', duration: 1, delay: .3 }}
+        >
           <div className="flex pt-4 md:pt-8 -m-4 gap-4 items-center">
             <img
               src={node}
@@ -104,9 +125,13 @@ const Skills = () => {
           <p className="px-6 pt-8">
             I have basic knowledge and understanding about NodeJs and how to make a server side using this platform using express framework.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="bg-white border-4 shadow-lg mt-8 lg:mt-0 border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]">
+        <motion.div className="bg-white border-4 shadow-lg mt-8 lg:mt-0 border-l-black border-t-0 border-b-0 border-r-0 pb-6 lg:w-[450px]"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1}}
+          transition={{ type: 'tween', duration: 1, delay: .3 }}
+        >
           <div className="flex pt-4 md:pt-8 -m-4 gap-4 items-center">
             <img
               src={mongodb}
@@ -120,7 +145,7 @@ const Skills = () => {
           <p className="px-6 pt-8">
             MongoDB is a no sql database and this is my prefered database in creating a backend or full stack websites alongside with Node and Express for backend and React/Next for frontend.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* tools and other knowledge */}

@@ -2,6 +2,7 @@ import React from "react";
 import { Project } from "../types/type";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi"
+import { motion } from "framer-motion"
 
 type ProjectProps = {
     project: Project;
@@ -11,7 +12,11 @@ const ProjectData: React.FC<ProjectProps> = (props) => {
     const tools = project.tools.split(", "); // Split the tools string by comma
 
     return (
-        <div className="mb-12 md:mb-0 bg-[#DAF5FF] shadow-lg rounded-md md:flex md:flex-col md:max-w-[450px] overflow-hidden">
+        <motion.div className="mb-12 md:mb-0 bg-[#DAF5FF] shadow-lg rounded-md md:flex md:flex-col md:max-w-[450px] overflow-hidden"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1}}
+        transition={{ type: 'tween', duration: 1, delay: .3 }}
+        >
             <img src={project.image} alt="" className="hover:scale-[110%] ease-in duration-300" />
             <div className="p-5">
                 <div className="flex justify-between items-end pb-4">
@@ -33,7 +38,7 @@ const ProjectData: React.FC<ProjectProps> = (props) => {
                     {project.description}
                 </p>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
