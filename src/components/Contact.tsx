@@ -18,7 +18,7 @@ const Contact = () => {
                         <p className="flex items-center font-bold pb-2 gap-2"><MdEmail size={40} className="bg-black text-white p-2" />anielrussel13@gmail.com</p>
                         <p className="flex items-center font-bold gap-2"><ImLocation2 size={40} className="bg-black text-white p-2" />Quezon City, Philippines</p>
                     </div>
-                    <a href="/public/Aniel CV.pdf" download>
+                    <a href="/public/Aniel, Russel-CV.pdff" download>
                         <button className="border border-black py-2 px-8 font-Oswald text-black text-md mt-10 hover:bg-black hover:text-white">
                             Download CV
                         </button>
