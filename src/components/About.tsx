@@ -30,7 +30,7 @@ const About = () => {
                         Hire Me
                     </button>
                     </Link>
-                    <a href="/public/Aniel, Russel-CV.pdf" download>
+                    <a href="/Aniel, Russel-CV.pdf" download>
                     <button className="border border-black py-2 px-8 font-Oswald text-black text-md mt-4 hover:bg-black hover:text-white">
                         Download CV
                     </button>
