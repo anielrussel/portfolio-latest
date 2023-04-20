@@ -16,8 +16,8 @@ const Sidebar: React.FC<SidebarProps> = ({
 }) => {
 
   return (
-    <nav className={`bg-[#DAF5FF] fixed w-[260px] flex flex-col items-center justify-between h-screen  p-4 z-50 ease-in-out duration-500 ${isOpen ? "" : 'ml-[-53.8%] lg:ml-[-16.5%] z-50'}`}>
-      {isOpen ? <AiOutlineArrowLeft size={40} className='absolute ml-[228px] mt-8 border border-[#1A5F7A] p-1 bg-[#1A5F7A] text-white cursor-pointer' onClick={toggleSidebar} /> : <AiOutlineArrowRight size={40} className='absolute ml-[290px] lg:ml-[290px] mt-8 border bg-[#1A5F7A] text-white p-1 cursor-pointer' onClick={toggleSidebar} />}
+    <nav className={`bg-[#DAF5FF] fixed w-[260px] flex flex-col items-center justify-between h-screen  p-4 z-50 ease-in-out duration-500 ${isOpen ? "" : 'ml-[-100%] z-50'}`}>
+      {isOpen ? <AiOutlineArrowLeft size={40} className='absolute ml-[228px] mt-8 border border-[#1A5F7A] p-1 bg-[#1A5F7A] text-white cursor-pointer' onClick={toggleSidebar} /> : <AiOutlineArrowRight size={40} className='fixed left-0 mt-8 border bg-[#1A5F7A] text-white p-1 cursor-pointer' onClick={toggleSidebar} />}
       <div className='flex flex-col items-center'>
         <img src={profile} alt='' className='w-[150px] rounded-full p-1 border border-gray-600' />
         <h1 className='pt-2 font-Grotesk font-bold text-lg text-[#0B2447]'>Web Developer</h1>
