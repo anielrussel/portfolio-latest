@@ -1,4 +1,3 @@
-import About from "./components/About";
 import HomePage from "./components/HomePage"
 import Sidebar from "./components/Sidebar"
 import { useState } from "react";

@@ -16,13 +16,13 @@ const HomePage: React.FC<Props> = ({ isOpen }) => {
 
   return (
 
-    <div className={`flex-1 transition-all duration-500 ease-in-out ${isOpen ? 'ml-[260px] md:ml-[16.5%]' : 'ml-0'}`}>
+    <div className={`flex-1 transition-all duration-500 ease-in-out overflow-x-hidden ${isOpen ? 'ml-[260px] md:ml-[16.5%]' : 'ml-0'}`}>
       <div id="Home">
-        <div className='absolute w-full h-screen top-0 left-0 bg-[#DAF5FF] opacity-50 z-40'></div>
+        <div className='absolute w-full h-screen top-0 left-0 bg-black opacity-30 z-40'></div>
         <div className='h-screen bg-bg-main bg-cover bg-center z-30'>
           <div className='relative flex flex-col gap-4 items-center justify-center h-screen z-[40]'>
-            <h1 className='font-Oswald text-4xl font-bold text-white lg:text-5xl'>Hello,</h1>
-            <h2 className='font-Grotesk text-5xl text-center font-extrabold lg:text-6xl'>I'm Russel M. Aniel</h2>
+            <h1 className='font-Oswald text-4xl text-white lg:text-5xl pb-8'>Hello!</h1>
+            <h2 className='font-Grotesk text-5xl text-center font-extrabold lg:text-6xl text-white'>I'm Russel M. Aniel</h2>
             <p className='font=Oswald flex gap-2 text-xl text-black font-bold lg:text-2xl'>I can do<Typewriter
               options={{
                 strings: ['Frontend', 'Backend', 'Fullstack'],
@@ -33,7 +33,7 @@ const HomePage: React.FC<Props> = ({ isOpen }) => {
               }}
             /></p>
             <Link to="Contact" smooth={true}>
-              <button className='border border-black py-2 px-8 font-Oswald bg-black text-white text-md mt-4 hover:bg-transparent hover:text-black'>
+              <button className='border-2 border-black py-2 px-8 font-Oswald bg-black text-white text-md mt-4 hover:bg-transparent'>
                 Hire Me
               </button>
             </Link>

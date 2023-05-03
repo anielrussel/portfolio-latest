@@ -18,6 +18,13 @@ import framer from "../assets/framer.png";
 import vscode from "../assets/vscode.png";
 import vite from "../assets/vite.svg";
 import nextjs from "../assets/nextjs.svg";
+import java from "../assets/java.png";
+import wordpress from "../assets/wordpress.png";
+import postman from "../assets/postman.png";
+import git from "../assets/git.png";
+import github from "../assets/github.png";
+import jwt from "../assets/jwt.png";
+
 import { motion } from "framer-motion"
 
 const Skills = () => {
@@ -163,6 +170,12 @@ const Skills = () => {
           <img src={prisma} alt="" className="p-1 shadow-lg bg-white border border-gray-400 rounded-md hover:-translate-y-2 ease-out duration-200" title="prisma"/>
           <img src={framer} alt="" className="p-1 shadow-lg bg-white border border-gray-400 rounded-md hover:-translate-y-2 ease-out duration-200" title="framer"/>
           <img src={vscode} alt="" className="p-1 shadow-lg bg-white border border-gray-400 rounded-md hover:-translate-y-2 ease-out duration-200" title="vscode"/>
+          <img src={java} alt="" className="p-1 shadow-lg bg-white border border-gray-400 rounded-md hover:-translate-y-2 ease-out duration-200" title="java"/>
+          <img src={wordpress} alt="" className="p-1 shadow-lg bg-white border border-gray-400 rounded-md hover:-translate-y-2 ease-out duration-200" title="wordpress"/>
+          <img src={postman} alt="" className="p-1 shadow-lg bg-white border border-gray-400 rounded-md hover:-translate-y-2 ease-out duration-200" title="postman"/>
+          <img src={git} alt="" className="p-1 shadow-lg bg-white border border-gray-400 rounded-md hover:-translate-y-2 ease-out duration-200" title="git"/>
+          <img src={github} alt="" className="p-1 shadow-lg bg-white border border-gray-400 rounded-md hover:-translate-y-2 ease-out duration-200" title="github"/>
+          <img src={jwt} alt="" className="p-1 shadow-lg bg-white border border-gray-400 rounded-md hover:-translate-y-2 ease-out duration-200" title="jsonwebtoken"/>
         </div>
       </div>
     </div>
