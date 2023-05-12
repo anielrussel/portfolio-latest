@@ -20,12 +20,12 @@ const projectsData: Project[] = [
   {
     id: 1,
     image: inventorysystem,
-    name: "Inventory System",
+    name: "Fullstack Inventory System",
     demo: "https://inventory-system-mernapp.vercel.app/",
     github: "https://github.com/anielrussel/Inventory-System-MERNAPP",
     tools: "NodeJs, ExpressJs, MongoDB, JWT, bcrypt, React + Vite, Typescript, TailwindCSS, Antd, Axios, React-Toastify",
     description:
-      "A Fullstack Inventory System created using MERN stack, the server side is created using Node and Express framework, the data is stored in the MongoDB database that is being fetched in the frontend using axios. The user can create an account and can start making it's own inventory.",
+      "A Fullstack Inventory System created using MERN stack, the server side is created using Node and Express framework, the data is stored in the MongoDB database that is being fetched in the frontend using axios. The user can create an account and can start making it's own inventory.(Logging in might be slow because I'm only using free hosting platforms.😊)",
   },
   {
     id: 2,
