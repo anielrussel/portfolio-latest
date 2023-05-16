@@ -20,7 +20,7 @@ const HomePage: React.FC<Props> = ({ isOpen }) => {
       <div id="Home">
         <div className='absolute w-full h-screen top-0 left-0 bg-black opacity-30 z-40'></div>
         <div className='h-screen bg-bg-main bg-cover bg-center z-30'>
-          <div className='relative flex flex-col gap-4 items-center justify-center h-screen z-[40]'>
+          <div className='relative flex flex-col gap-4 items-center justify-center text-center h-screen z-[40]'>
             <h1 className='font-Oswald text-4xl text-white lg:text-5xl pb-8'>Hello!</h1>
             <h2 className='font-Grotesk text-5xl text-center font-extrabold lg:text-6xl text-white'>I'm Russel M. Aniel</h2>
             <p className='font=Oswald flex gap-2 text-xl text-black font-bold lg:text-2xl'>I can do<Typewriter
